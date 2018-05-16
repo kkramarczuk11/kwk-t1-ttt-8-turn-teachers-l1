@@ -31,7 +31,8 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
   move(board, index, "O")
-else
+else puts "invalid"
+  input = gets.strip
   end
   display_board(board)
 end
