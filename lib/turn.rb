@@ -17,7 +17,7 @@ def move(board, index, token = "X")
 end
 
 def valid_move?(board, index)
-  index.between?(0,8) && !position_taken?(board,index)
+  index.is_a?(Integer) && index.between?(0,8) && !position_taken?(board,index)
 end
 
 def position_taken?(board, index)
@@ -26,7 +26,7 @@ end
 
 def turn(board)
   index = "INVALID"
-  
+
   until valid_move?(board, index)
     puts "Please enter 1-9:"
     input = gets.strip
