@@ -17,7 +17,7 @@ def move(board, index, token = "X")
 end
 
 def turn(board)
-  index = "0" #start with something false to start off the loop and reverse with the until
+  index = 0 #start with something false to start off the loop and reverse with the until
 
   until valid_move?(board, index)
     puts "Please enter 1-9:"
