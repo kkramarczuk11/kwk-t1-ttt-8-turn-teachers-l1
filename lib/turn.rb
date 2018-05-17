@@ -25,11 +25,9 @@ def turn(board)
 
   if valid_move?(board, index)
   move(board, index, "O")
+  display_board(board)
 else
   turn(board)
-  end
-end
-  display_board(board)
 end
 
 def valid_move?(board, index)
