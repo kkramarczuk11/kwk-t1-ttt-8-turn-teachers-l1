@@ -13,6 +13,7 @@ move(board, index, token = "X")
 else
 turn(board)
 display_board(board)
+end
 
 turn(board)
 turn(board)
