@@ -17,9 +17,6 @@ def move(board, index, token = "X")
 end
 
 def turn(board)
-  index = "invalid" #start with something false to start off the loop and reverse with the until
-
-  until valid_move?(board, index)
     puts "Please enter 1-9:"
     input = gets.strip
 
@@ -28,6 +25,8 @@ def turn(board)
 
   if valid_move?(board, index)
   move(board, index, "O")
+else
+  turn(board)
   end
   display_board(board)
 end
