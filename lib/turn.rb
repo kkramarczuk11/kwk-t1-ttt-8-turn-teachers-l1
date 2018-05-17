@@ -25,7 +25,7 @@ def position_taken?(board, index)
 end
 
 def turn(board)
-  index = "INVALID"
+  index = "INVALID" #start with something false to start off the loop and reverse with the until
 
   until valid_move?(board, index)
     puts "Please enter 1-9:"
