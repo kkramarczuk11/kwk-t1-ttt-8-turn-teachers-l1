@@ -14,7 +14,7 @@ turn(board)
 display_board(board)
 end
 loop do
-  if counter = 2,4,6,8
+  if counter = even
     move(board, index, token = "X")
-  elsif counter = 1,3,5,7    
+  elsif counter = odd
 end
