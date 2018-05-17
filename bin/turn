@@ -11,9 +11,9 @@ index = input_to_index(input)
 if valid_move?(board, index)
 move(board, index, token = "X")
 else
-turn1(board)
+turn(board)
 display_board(board)
 end
 
-turn1(board)
-turn1(board)
+turn(board)
+turn(board)
