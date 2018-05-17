@@ -16,14 +16,6 @@ def move(board, index, token = "X")
   board[index] = token
 end
 
-def valid_move?(board, index)
-  index.is_a?(Integer) && index.between?(0,8) && !position_taken?(board,index)
-end
-
-def position_taken?(board, index)
-  board[index] != " "
-end
-
 def turn(board)
   index = "INVALID" #start with something false to start off the loop and reverse with the until
 
@@ -38,4 +30,12 @@ def turn(board)
   move(board, index, "O")
   end
   display_board(board)
+end
+
+def valid_move?(board, index)
+  index.is_a?(Integer) && index.between?(0,8) && !position_taken?(board,index)
+end
+
+def position_taken?(board, index)
+  board[index] != " "
 end
